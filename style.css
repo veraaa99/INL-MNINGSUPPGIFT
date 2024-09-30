@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --clr-primary: #6366F1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Dark mode */
+/* .dark{
+
+} */
+
+body{
+    font-family: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-nav .container {
+    justify-content: space-between;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    margin: 0.5rem;
+}
+
+.nav-left {
+    p {
+        display: none;
+    }
+}
+
+.toggle{
+    width: 46px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+
+    input[type="checkbox"]{
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    .slider{
+        position:absolute;
+        inset: 0;
+        background-color: #9397AD;
+        border-radius: 100vw;
+        cursor: pointer;
+    }
+
+    .slider::before {
+        content:'';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-110%, -50%);
+        height: 75%;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background-color: white;
+
+        transition: 200ms;
+    }
+
+    input[type="checkbox"]:checked ~ .slider::before{
+        left: calc(100% - 1px);
+    }
+
+}
+
+
+
+main {
+    text-align: justify;
+}
+
+.img {
+    display: block;
+}
+
+.app-btn{
+    background-color:black;
+    margin: 0.4rem;
+    padding: 0.4rem;
+    border: none;
+    border-radius: 7px;
+}
+
+.flex {
+    display: flex;
+
+    &.flex-column{
+        flex-direction: column;
+    }
+
+    &.small-center{
+        justify-content: center;
+    }
+
+}
+
+.grid {
+    display: grid;
+}
+
+.darkmode {
+    p {
+        display: none;
+    }
+}
+
+.align-center{
+    align-items: center;
+    text-align: center;
+}
+
+.user-btn{
+    display: none;
+}
+
+.feature {
+    img {
+        align-self: start;
+    }
+
+    &.feature-text{
+        justify-content: right;
+        text-align: left;
+    }
+}
+
+.img-container{
+    position: relative;
+}
+
+.mobile-border {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.FAQ-container {
+    /* Fixa globala och/eller lokala färgvariabler! */
+    border: 1px solid #E2E5F1; 
+    text-align: left;
+}
+
+.question{
+    border-bottom: 1px solid #E2E5F1;
+}
+
+.question-info{
+    display: block;
+    flex-direction: column;
+}
+
+.subscribe-card{
+    /* Fixa globala och/eller lokala färgvariabler! */
+    background-color: #F3F6FF;
+}
+
+@media (width > 390px) {
+    .darkmode{
+        p {
+            display:inline-block;
+        }
+    }
+
+}
+
+@media (width > 768px){
+
+    .user-btn{
+        display: inline-block;
+    }
+
+    .nav-left {
+        p {
+            display: inline-block;
+        }
+    }
+
+}
