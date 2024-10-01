@@ -248,7 +248,7 @@ main {
     font-size: 14px;
 
     margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .feature {
@@ -257,6 +257,11 @@ main {
     &.feature-text{
         justify-content: right;
         text-align: left;
+    }
+
+    h2 {
+        font-size: 21.6px;
+        font-weight: bold;
     }
 
     h3 {
@@ -304,7 +309,6 @@ main {
 
 .FAQ-container {
     margin-top: 1rem;
-
     border: 1px solid var(--clr-gray-300); 
     text-align: left;
 }
@@ -336,6 +340,64 @@ main {
 
 .subscribe-card{
     background-color: var(--clr-gray-100);
+    border-radius: 8px;
+    padding-bottom: 2rem;
+
+    .subscribe-title{
+        margin: 2rem;
+        padding-top: 2rem;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 21.6px;
+            font-weight: bolder;
+            line-height: 30.2px;
+        }
+        
+    }
+
+    .subscribe-mail{
+        justify-content: center;
+    }
+
+    input[type=email]{
+        background-image: url("images/Vector\ \(2\).svg");
+        background-position: 1em center; 
+        background-repeat: no-repeat;
+
+        padding: 1rem 1rem;
+        border: 1px solid var(--clr-gray-400);
+        border-radius: 8px 0 0 8px;
+    }
+
+    ::placeholder {
+        font-family: "Manrope";
+        font-size: 16px;
+        color: var(--clr-gray-500);
+
+        padding-left: 2rem;
+    }
+
+    input[type=submit]{
+        width: 114.68px;
+        height: 52.3px;
+        background-color: var(--clr-primary);
+        color: white;
+        border: none;
+        border-radius: 0 8px 8px 0;
+    }
+}
+
+footer {
+    p {
+        font-size: 14px;
+        color: var(--clr-gray-600);
+        line-height: 160%;
+    }
+    
+    padding-bottom: 1.8rem;
+    padding-top: 1.8rem;
 }
 
 @media (width > 490px) {
