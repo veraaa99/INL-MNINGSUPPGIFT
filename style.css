@@ -215,6 +215,42 @@ main {
     border: none;
 }
 
+.FAQ-btn-opened{
+    width: 36px;
+    height: 36px;
+    aspect-ratio: 1;
+    background-color: var(--clr-primary);
+    border-radius: 50%;
+    border: none;
+    
+    margin-right: 1rem;
+}
+
+.FAQ-btn-closed{
+    width: 36px;
+    height: 36px;
+    aspect-ratio: 1;
+    background-color: var(--clr-gray-100);
+    border-radius: 50%;
+    border: none;
+
+    margin-right: 1rem;
+}
+
+.primary-btn {
+    height: 49.5px;
+    width: 162.29px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--clr-primary);
+
+    color: #fff;
+    font-size: 14px;
+
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
 .feature {
     gap: 1.5rem;
 
@@ -267,19 +303,34 @@ main {
 }
 
 .FAQ-container {
+    margin-top: 1rem;
+
     border: 1px solid var(--clr-gray-300); 
     text-align: left;
 }
 
 .question{
-    border-bottom: 1px solid var(--clr-gray-300);
+    border: 1px solid var(--clr-gray-300);
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+        font-size: 16px;
+        line-height: 20.8px;
+        padding: 1rem;
+    }
+
 }
 
 .question-info{
     display: block;
     flex-direction: column;
+    margin: 0;
+    padding-inline: 1.5rem;
+
     p {
         font-size: 14px;
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -287,7 +338,7 @@ main {
     background-color: var(--clr-gray-100);
 }
 
-@media (width > 390px) {
+@media (width > 490px) {
     .darkmode{
         p {
             display:inline-block;
