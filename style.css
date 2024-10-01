@@ -44,20 +44,26 @@ body{
 }
 
 .container {
+    width: 100%;
+    padding-inline: 3%;
+    margin: 0 auto;
 
     p {
         font-size: 18px;
         margin-top: 1rem;
         margin-bottom: 3rem;
+        line-height: 28.8px;
     }
 
     h2 {
+        padding-top: 2rem;
         font-size: 27.9px
     }
 
-    width: 100%;
-    padding-inline: 3%;
-    margin: 0 auto;
+}
+
+.extra-margin {
+    margin-top: 2rem;
 }
 
 nav {
@@ -72,6 +78,10 @@ nav {
 
 .gradient {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(99, 102, 241, 0.1));
+}
+
+.plain-clr {
+    background-color: var(--clr-gray-100);
 }
 
 .toggle{
@@ -152,6 +162,14 @@ main {
 
     &.flex-column{
         flex-direction: column;
+        
+        h3 {
+            font-size: 21.6px;
+            line-height: 30.2px;
+            font-weight: bold;
+
+            margin-top: 2rem;
+        }
     }
 
     &.small-center{
@@ -211,6 +229,7 @@ main {
 
     p {
         font-size: 16px;
+        line-height: 25.6px;
     }
 
     .feature-img {
@@ -232,6 +251,12 @@ main {
 
 .img-container{
     position: relative;
+    margin-top: 2rem;
+}
+
+.mobile-screen{
+    background-color: #0B0F19;
+    border-radius: 18%;
 }
 
 .mobile-border {
