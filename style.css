@@ -722,8 +722,57 @@ footer {
 
         }
     }
+
+    .subscribe-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-bottom: 0;
+
+        .feature {
+            gap: 0;
+        }
+
+        .subscribe-title {
+            padding-block: 2rem;
+            padding-inline: 1rem;
+
+            padding-bottom: 1rem;
+            margin-left: 0;
+
+            h2 {
+                padding-top: 0;
+            }
+
+            img {
+                margin-bottom: 1.5rem;
+                padding-inline: 1.5rem;
+            }
+            
+        }
+
+        .subscribe-mail {
+            margin-right: 2rem;
+            
+        }
+
+        input[type=email]{
+            padding: 1rem 2.5rem;
+        }
+
+        ::placeholder {
     
-    
+            padding-left: 0.5rem;
+        }
+
+    }
+
+    footer {
+        p {
+            display: inline;
+        }
+    }
 
 }
 
