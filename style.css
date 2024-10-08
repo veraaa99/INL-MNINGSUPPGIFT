@@ -110,6 +110,9 @@ nav {
         background-color: var(--clr-gray-600);
         border-radius: 100vw;
         cursor: pointer;
+
+        box-shadow: 0px 6px 15px -5px var(--clr-gray-500);
+
     }
 
     .slider::before {
@@ -1107,6 +1110,9 @@ footer {
     }
 
     .testimonials-desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
         gap: 1.2rem;
     
         h2 {
@@ -1129,7 +1135,8 @@ footer {
 
             padding: 1.5rem;
             padding-bottom: 1.5rem;
-            width: 45%;
+
+            box-shadow: 0px 6px 15px -5px var(--clr-gray-400);
 
             p {
                 margin-top: 1.7rem;
