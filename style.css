@@ -758,7 +758,7 @@ footer {
     }
 
     .main-nav, .footer, .brands, .app-features, .how-does-it-work-desktop,
-    .more-features-desktop, .testimonials-desktop {
+    .more-features-desktop, .testimonials-desktop, .FAQ-desktop {
         align-self: center;
         max-width: 1296px;
         margin: 0 auto;
@@ -966,6 +966,16 @@ footer {
         gap: 0.5rem;
     }
 
+    .how-does-it-work {
+        .imgs-container {
+            display: none;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+
     .imgs-container-desktop {
         display: flex;
         margin-top: 4rem;
@@ -1149,21 +1159,53 @@ footer {
 
     }
 
+    .FAQ-desktop {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(4, 0.5fr);
+
+        margin-top: 3rem;
+        margin-bottom: 6rem;
+
+        .FAQ-h2 {
+            grid-column: 1 / span 4;
+            grid-row: 1;
+
+            text-align: left;
+
+            h2 {
+                margin-bottom: 1rem;
+            }
+        }
+
+        .contact-us {
+            grid-column: 1 / span 4;
+            grid-row: 2;
+
+            margin-top: 0;
+
+            .contact-card {
+                align-self:flex-start;
+            }
+
+        }
+
+        .FAQ-container {
+            grid-column: 6 / span 7;
+            grid-row: 1 /span 4;
+        }
+
+        .answer-mobile {
+            display: none;
+        }
+
+    }
+
     
 
 
     .menu-btn {
         display: none;
-    }
-
-    .how-does-it-work {
-        .imgs-container {
-            display: none;
-        }
-
-        h3 {
-            font-size: 1.5rem;
-        }
     }
 
     }
