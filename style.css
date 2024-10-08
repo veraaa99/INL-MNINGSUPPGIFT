@@ -399,6 +399,8 @@ main {
     }
 
     input[type=submit] {
+        font-family: "Manrope";
+        font-weight: 500;
         width: 7.17rem;
         height: 3.27rem;
         background-color: var(--clr-primary);
@@ -758,7 +760,7 @@ footer {
     }
 
     .main-nav, .footer, .brands, .app-features, .how-does-it-work-desktop,
-    .more-features-desktop, .testimonials-desktop, .FAQ-desktop {
+    .more-features-desktop, .testimonials-desktop, .FAQ-desktop, .subscribe-card{
         align-self: center;
         max-width: 1296px;
         margin: 0 auto;
@@ -1200,6 +1202,27 @@ footer {
         }
 
     }
+
+    .subscribe-card{
+        justify-content: space-around;
+
+        .subscribe-title {
+            padding-inline: 0;
+            
+        }
+
+        input[type=email] {
+            padding-right: 6rem;
+        }
+
+        input[type=submit] {
+            width: 8.88rem;
+            height: 3.25rem;
+        }
+
+    }
+
+    
 
     
 
