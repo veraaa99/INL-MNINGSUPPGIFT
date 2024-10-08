@@ -421,8 +421,9 @@ footer {
 }
 
 .showcase-img, .user-btn, .brands, .imgs-container, 
-.closed-tablet, .opened-tablet, .answer-tablet, .contact-card, .features-mobile-img {
-    display:none;
+.closed-tablet, .opened-tablet, .answer-tablet, .contact-card, .features-mobile-img, .imgs-container-desktop, .more-features-desktop, 
+.testimonials {
+    display: none;
 }
 
 
@@ -751,17 +752,22 @@ footer {
 @media (width > 768px) {
 
     html, body {
-        /* max-width: 1296px; */
-        /* max-width: 1000px; */
         margin: 0 auto;
         overflow-x: hidden;
         text-align: center;
     }
 
-    .main-nav, .footer, .brands, .app-features {
+    .main-nav, .footer, .brands, .app-features, .how-does-it-work-desktop,
+    .more-features-desktop, .testimonials-desktop {
         align-self: center;
         max-width: 1296px;
         margin: 0 auto;
+    }
+
+    .container {
+        h2 {
+            font-size: 2.5rem;
+        }
     }
 
     nav {
@@ -804,7 +810,6 @@ footer {
     .showcase-desktop {
         display: grid;
         max-width: 1296px;
-        /* align-self: center; */
 
         .showcase-content, .h1-div {
             grid-area: 1 / 1;
@@ -828,6 +833,10 @@ footer {
         }
 
         .h1-div {
+            /* h1 {
+                font-size: 3.5rem;
+            } */
+
             text-align: left;
     
             margin: 0;
@@ -957,8 +966,147 @@ footer {
         gap: 0.5rem;
     }
 
+    .imgs-container-desktop {
+        display: flex;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        padding-inline: 2rem;
+
+        justify-content: center;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+    }
+
+    .more-features-desktop {
+        margin-top: 4rem;
+        margin-bottom: 7rem;
+        padding-inline: 5rem;
+        display: flex;
+        text-align: left;
+
+        h2 {
+            width: 80%;
+        }
+
+        ul {
+            color: var(--clr-gray-700);
+            line-height: 2.5rem;
+            list-style: none;
+
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        li {
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        li::before {
+            content: '';
+            background: url(images/checkmark-primary.svg) no-repeat;
+            background-position: center;
+            display: inline-block;
+
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+
+            width: 15px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+
+            border: 2px solid var(--clr-primary);
+            background-color: white;
+
+            position:absolute;
+            left: 0;
+            top: 0.7rem;
+
+        }
+
+        .primary-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 1rem;
+            margin-top: 0;
+        }
+
+        .more-features-info-left {
+            width: 55%;
+        }
+
+        .more-features-info-right {
+            width: 50%;
+            margin-left: 2rem;
+        }
+
+        .more-features-img{
+            display: flex;
+            margin-top: 2rem;
+            justify-content: center;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .feature-img {
+            width: 3.75rem;
+            height: 3.75rem;
+            aspect-ratio: 1;
+        
+            background-color: var(--clr-gray-100);
+            border: none;
+            border-radius: 0.5rem;
+    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+        }
+
+        .more-features-cards {
+            align-items: center;
+            gap: 2rem;
+
+            &.flex .flex-column {
+                padding-top: 3rem;
+            }
+
+            p {
+                margin-bottom: 2rem;
+            }
+
+        }
+
+    }
+
+    .testimonials {
+        display: flex;
+        background-color: var(--clr-gray-100);
+    }
+
+
     .menu-btn {
         display: none;
+    }
+
+    .how-does-it-work {
+        .imgs-container {
+            display: none;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
     }
 
     }
