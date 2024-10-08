@@ -1094,6 +1094,63 @@ footer {
         background-color: var(--clr-gray-100);
     }
 
+    .testimonials-desktop {
+        gap: 1.2rem;
+    
+        h2 {
+            display: inline;
+            padding: 0;
+            text-align: left;
+
+            margin-right: 6rem;
+            margin-top: 4rem;
+        }
+
+        .testimonials-card {
+            position: relative;
+            margin-bottom: 8rem;
+            margin-top: 6rem;
+
+            background-color: #fff;
+            border: none;
+            border-radius: 7px;
+
+            padding: 1.5rem;
+            padding-bottom: 1.5rem;
+            width: 45%;
+
+            p {
+                margin-top: 1.7rem;
+                margin-bottom: 1.3rem;
+                text-align: left;
+            }
+
+            img {
+                margin-top: 1.7rem;
+                width: 25%;
+                height: 25%;
+            }
+
+            .reviewer {
+                margin-top: 0;
+                width: 70%;
+                height: 70%;
+            }
+        }
+
+        .testimonials-card::before {
+            content: url(images/quotes.svg);
+            position: absolute;
+
+            top:-8%;
+            left: 3%;
+
+        }
+
+    }
+
+    
+
 
     .menu-btn {
         display: none;
