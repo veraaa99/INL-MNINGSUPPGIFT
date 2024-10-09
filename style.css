@@ -3,7 +3,9 @@
 :root {
     --clr-primary: #6366f1;
     --clr-gradient: linear-gradient(#6366F1, #8B5CF6, #D946EF);
+    --clr-html-bg: #fff;
 
+    --clr-white: #fff;
     --clr-gray-100: #F3F6FF;
     --clr-gray-200: #EFF2FC;
     --clr-gray-300: #E2E5F1;
@@ -13,8 +15,15 @@
     --clr-gray-700: #565973;
     --clr-gray-800: #33354D;
     --clr-gray-900: #0B0F19;
-
     --clr-system-or-success: #22C55E;
+
+    --nav_logo: url("images/solid.svg");
+    --appstore-btn: url("images/appstore-light.svg.svg");
+    --playstore-btn: url("images/googleplay-light.svg.svg");
+
+    --clr-shadow-300: #E2E5F1;
+    --clr-shadow-400: #D4D7E5;
+    --clr-shadow-500: #B4B7C9;
 }
 
 * {
@@ -23,10 +32,36 @@
     box-sizing: border-box;
 }
 
-/* Dark mode */
-/* .dark{
+html {
+    color-scheme: light;
+    background-color: var(--clr-bg);
+}
 
-} */
+/* Dark mode */
+/* byt ut logotyper mot de i dark mode */
+.dark{
+    color-scheme: dark;
+
+    --clr-html-bg: #0B0F19;
+    /* --clr-white: rgba(255, 255, 255, .15); */
+    --clr-white: rgba(255, 255, 255, .04);
+    --clr-gray-100: rgba(255, 255, 255, .03);
+    --clr-gray-300: rgba(255, 255, 255, .15);
+    --clr-gray-700: #9397AD; 
+    --clr-gray-800: #fff;
+    --clr-gray-900: #F3F6FF;
+
+    --clr-shadow-300: #0B0F19;
+    --clr-shadow-400: #0B0F19; 
+    --clr-shadow-500: #0B0F19;
+
+    --nav_logo: url("images/solid-dark.svg");
+    --appstore-btn: url("images/appstore-dark.svg");
+    --playstore-btn: url("images/googleplay-dark.svg");
+    --arrow-down-btn: url("images/Vector\ \(4\).svg");
+    --reviewer-1-icon: url("images/author\ \(2\).svg");
+    --reviewer-2-icon: url("images/author\ \(3\).svg");
+}
 
 body{
     font-family: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -39,6 +74,31 @@ body{
         color: var(--clr-gray-700);
     }
 }
+
+.nav_logo {
+    content: var(--nav_logo);
+}
+
+.appstore-btn {
+    content: var( --appstore-btn);
+}
+
+.playstore-btn {
+    content: var(--playstore-btn);
+}
+
+.arrow-down-icon {
+    content: var(--arrow-down-btn);
+}
+
+.reviewer-1 {
+    content: var(--reviewer-1-icon);
+}
+
+.reviewer-2 {
+    content: var(--reviewer-2-icon);
+}
+
 
 .flex {
     display: flex;
@@ -111,7 +171,7 @@ nav {
         border-radius: 100vw;
         cursor: pointer;
 
-        box-shadow: 0px 6px 15px -5px var(--clr-gray-500);
+        box-shadow: 0px 6px 15px -5px var(--clr-shadow-500);
 
     }
 
@@ -168,7 +228,7 @@ main {
     }
     
     .app-btn{
-        background-color:black;
+        background-color: var(--clr-gray-900);
         margin: 0.4rem;
         padding: 0.5rem;
         border: none;
@@ -187,6 +247,11 @@ main {
         p {
             font-size: 0.875rem;
             margin: 0;
+            color: var(--clr-gray-700);
+        }
+
+        button {
+            background-color: var(--clr-white);
         }
     }
 }
@@ -314,6 +379,7 @@ main {
     }
     
     .question {
+        background-color: var(--clr-white);
         border: 1px solid var(--clr-gray-300);
         align-items: center;
         justify-content: space-between;
@@ -328,6 +394,7 @@ main {
     }
 
     .answer-mobile{
+        background-color: var(--clr-white);
         display: block;
         flex-direction: column;
         margin: 0;
@@ -613,7 +680,7 @@ footer {
             border-radius: 0.5rem;
             border: none;
 
-            box-shadow: 0px 6px 15px -5px var(--clr-gray-300);
+            box-shadow: 0px 6px 15px -5px var(--clr-shadow-300);
 
             h2 {
                 font-size: 1rem;
@@ -630,6 +697,7 @@ footer {
         }
 
         .answer-tablet{
+            background-color: var(--clr-white);
             display: block;
             flex-direction: column;
             margin: 0;
@@ -643,7 +711,7 @@ footer {
 
         .question-and-answer-tablet {
             flex-direction: column;
-            box-shadow: 0px 6px 15px -5px var(--clr-gray-300);
+            box-shadow: 0px 6px 15px -5px var(--clr-shadow-300);
 
             .question {
                 box-shadow: none;
@@ -733,6 +801,7 @@ footer {
         }
 
         input[type=email] {
+            background-color: var(--clr-gray-100);
             padding: 1rem 2.5rem;
         }
 
@@ -779,13 +848,13 @@ footer {
         margin-inline: 0;
 
         .nav-left {
-
             gap: 2rem;
 
             p {
                 display: inline;
                 font-weight: bold;
                 margin: 0 auto;
+                color: var(--clr-gray-800);
             }
         
         }
@@ -1026,7 +1095,6 @@ footer {
             background: url(images/checkmark-primary.svg) no-repeat;
             background-position: center;
             display: inline-block;
-
             align-items: center;
             justify-content: center;
             margin-right: 1rem;
@@ -1036,7 +1104,7 @@ footer {
             border-radius: 50%;
 
             border: 2px solid var(--clr-primary);
-            background-color: white;
+            background-color: transparent;
 
             position:absolute;
             left: 0;
@@ -1129,14 +1197,14 @@ footer {
             margin-bottom: 8rem;
             margin-top: 6rem;
 
-            background-color: #fff;
+            background-color: var(--clr-white);
             border: none;
             border-radius: 7px;
 
             padding: 1.5rem;
             padding-bottom: 1.5rem;
 
-            box-shadow: 0px 6px 15px -5px var(--clr-gray-400);
+            box-shadow: 0px 6px 15px -5px var(--clr-shadow-400);
 
             p {
                 margin-top: 1.7rem;

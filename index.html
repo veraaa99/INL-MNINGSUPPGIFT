@@ -1,3 +1,4 @@
+<!-- To-do: fixa de sista skuggorna och rensa upp i koden -->
 <!DOCTYPE html>
 <html lang="sv">
 <head>
@@ -5,16 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silicon</title>
     <link rel="stylesheet" href="style.css">
-    <script src="darkmode.js"></script>
 </head>
 <body>
-    <!-- checkbox med id="darkmode-switch" -->
      <header>
         <nav class="main-nav">
-
             <div class="container flex">
                 <div class="nav-left flex align-center">
-                    <img src="images/solid.svg" alt="Logotype.">
+                    <img src="images/solid.svg" alt="Logotype." class="nav_logo">
                     <p>Features</p>
                 </div>
     
@@ -52,15 +50,15 @@
                             banking. Save, spend & manage money in your pocket.</p>
                         <div class="showcase-btns">
                             <button type="button" class="app-btn">
-                                <img src="images/appstore-light.svg.svg" alt="App Store download button.">
+                                <img src="images/appstore-light.svg.svg" alt="App Store download button." class="appstore-btn">
                             </button>
                             <button type="button" class="app-btn">
-                                <img src="images/googleplay-light.svg.svg" alt="Google Play download button.">
+                                <img src="images/googleplay-light.svg.svg" alt="Google Play download button." class="playstore-btn">
                             </button>
                         </div>
                         <div class="small-center">
                             <button type="button" class="discover-more-btn">
-                                <img src="images/Vector.svg" alt="Discover more-button.">
+                                <img src="images/Vector.svg" alt="Discover more-button." class="arrow-down-icon">
                             </button>
                             <p>Discover more</p>
                         </div>
@@ -214,7 +212,8 @@
                             <li>No monthly cash commission</li>
                             <li>Manage payments and transactions online</li>
                         </ul>
-                        <button type="button" class="primary-btn align-center">Learn more
+                        <button type="button" class="primary-btn align-center">
+                            Learn more
                             <img src="images/Vector (3).svg" alt="Arrow icon.">
                         </button>
                     </div>
@@ -259,12 +258,12 @@
                 <div class="testimonials-card flex flex-column">
                     <img src="images/rating.svg" alt="4-star rating.">
                     <p>Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis. Laoreet posuere rhoncus, egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. Montes justo turpis sit amet.</p>
-                    <img src="images/author.svg" alt="App reviewer's avatar and account." class="reviewer">
+                    <img src="images/author.svg" alt="App reviewer's avatar and account." class="reviewer reviewer-1">
                 </div>
                 <div class="testimonials-card flex flex-column">
                     <img src="images/rating (1).svg" alt="5-star rating.">
                     <p>Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin amet porttitor. Nisl bibendum nulla tincidunt eu enim ornare dictumst sit amet. Dictum pretium dolor tincidunt egestas eget nunc.</p>
-                    <img src="images/author (1).svg" alt="App reviewer's avatar and account." class="reviewer">
+                    <img src="images/author (1).svg" alt="App reviewer's avatar and account." class="reviewer reviewer-2">
                 </div>
             </div>
          </section>
@@ -285,7 +284,7 @@
                               <img src="images/image (1).svg" alt="Discover more button opened.">
                             </button>
                             <button type="button" class="FAQ-btn closed-tablet">
-                                <img src="images/Vector.svg" alt="Discover more button closed.">
+                                <img src="images/Vector.svg" alt="Discover more button closed." class="arrow-down-icon">
                             </button>
                     </div>
                     <div class="answer-mobile flex">
@@ -309,14 +308,14 @@
                         <h2>What formats can I download my
                             transaction history in?</h2>
                             <button type="button" class="FAQ-btn closed">
-                              <img src="images/Vector.svg" alt="Discover more button closed.">
+                              <img src="images/Vector.svg" alt="Discover more button closed." class="arrow-down-icon">
                             </button>
                     </div>
                     <div class="question-and-answer-tablet flex">
                         <div class="question flex">
                             <h2>Can I schedule future transfers?</h2>
                             <button type="button" class="FAQ-btn closed-mobile">
-                                <img src="images/Vector.svg" alt="Discover more button closed.">
+                                <img src="images/Vector.svg" alt="Discover more button closed." class="arrow-down-icon">
                             </button>
                             <button type="button" class="FAQ-btn opened-tablet">
                                 <img src="images/image (1).svg" alt="Discover more button opened.">
@@ -339,21 +338,21 @@
                         <h2>When can I use Banking App
                             services?</h2>
                             <button type="button" class="FAQ-btn closed">
-                              <img src="images/Vector.svg" alt="Discover more button closed.">
+                              <img src="images/Vector.svg" alt="Discover more button closed." class="arrow-down-icon">
                             </button>
                     </div>
                     <div class="question flex">
                         <h2>Can I create my own password that is
                             easy for me to remember?</h2>
                             <button type="button" class="FAQ-btn closed">
-                              <img src="images/Vector.svg" alt="Discover more button closed.">
+                              <img src="images/Vector.svg" alt="Discover more button closed." class="arrow-down-icon">
                             </button>
                     </div>
                     <div class="question flex">
                         <h2>What happens if I forget or lose my
                             password?</h2>
                             <button type="button" class="FAQ-btn closed">
-                              <img src="images/Vector.svg" alt="Discover more button closed.">
+                              <img src="images/Vector.svg" alt="Discover more button closed." class="arrow-down-icon">
                             </button>
                     </div>
                 </div>
@@ -407,5 +406,6 @@
         <p>Credit MadrasThemes</p>
      </footer>
 
+    <script src="darkmode.js"></script>
 </body>
 </html>
