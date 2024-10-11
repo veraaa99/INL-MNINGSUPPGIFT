@@ -352,12 +352,12 @@ main {
     }
 }
 
-.img-container{
+.app-UI-mobile-img {
     position: relative;
     margin-top: 2rem;
 }
 
-.mobile-screen{
+.mobile-screen {
     background-color: #0B0F19;
     border-radius: 18%;
 }
@@ -522,8 +522,8 @@ footer {
 }
 
 /* Not displayed classes */
-.showcase-img, .user-btn, .brands, .imgs-container, 
-.closed-tablet, .opened-tablet, .answer-tablet, .contact-card, .features-mobile-img, .imgs-container-desktop, .more-features-desktop, 
+.showcase-img, .user-btn, .brands, .app-UI-tablet-img, 
+.closed-tablet, .opened-tablet, .answer-tablet, .contact-card, .features-mobile-img, .app-UI-desktop-img, .more-features-desktop, 
 .testimonials, .tablet-br {
     display: none;
 }
@@ -708,7 +708,7 @@ footer {
         }
     }
 
-    .imgs-container {
+    .app-UI-tablet-img {
         display: flex;
         margin-top: 4rem;
         margin-bottom: 2rem;
@@ -876,7 +876,7 @@ footer {
     }
 
     /* Not displayed classes (tablet) */
-    .img-container, .primary-btn, .answer-mobile, .opened-mobile, .closed-mobile, .brand-desktop {
+    .app-UI-mobile-img, .primary-btn, .answer-mobile, .opened-mobile, .closed-mobile, .brand-desktop {
         display: none;
     }
 
@@ -1082,7 +1082,7 @@ footer {
         }
     }
 
-    .imgs-container-desktop {
+    .app-UI-desktop-img {
         display: flex;
         margin-top: 4rem;
         margin-bottom: 2rem;
@@ -1331,7 +1331,7 @@ footer {
     }
 
     /* Not displayed classes (desktop) */
-    .menu-btn, .imgs-container, .answer-mobile {
+    .menu-btn, .app-UI-tablet-img, .answer-mobile {
         display: none;
     }
 
