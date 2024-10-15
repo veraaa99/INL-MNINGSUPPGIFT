@@ -7,6 +7,9 @@
     --clr-html-bg: #fff;
 
     --clr-white: #fff;
+    --clr-permanent-white: #fff;
+    --clr-transparent: rgba(0, 0, 0, 0);
+
     --clr-gray-100: #F3F6FF;
     --clr-gray-200: #EFF2FC;
     --clr-gray-300: #E2E5F1;
@@ -205,7 +208,7 @@ input[type="checkbox"]{
     height: 75%;
     aspect-ratio: 1;
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--clr-permanent-white);
 
     transition: 200ms;
 }
@@ -224,7 +227,7 @@ input[type="checkbox"]:checked ~ .slider {
 }
 
 .menu-btn{
-    background-color: transparent;
+    background-color: var(--clr-transparent);
     border: none;
 }
 
@@ -297,7 +300,7 @@ main {
 .discover-more-btn {
     width: 2.75rem;
     height: 2.75rem;
-    background-color: #fff;
+    background-color: var(--clr-permanent-white);
     border-radius: 50%;
     border: none;
 }
@@ -362,7 +365,8 @@ main {
 }
 
 .mobile-screen {
-    background-color: #0B0F19;
+    /* SE ÖVER */
+    background-color: #0B0F19; 
     border-radius: 18%;
 }
     
@@ -452,7 +456,7 @@ main {
     border: none;
     background-color: var(--clr-primary);
 
-    color: #fff;
+    color: var(--clr-permanent-white);
     font-size: 0.875rem;
 
     margin-top: 3rem;
@@ -508,7 +512,7 @@ input[type=submit] {
     font-weight: 500;
     padding: 1em 1em;
     background-color: var(--clr-primary);
-    color: white;
+    color: var(--clr-permanent-white);
     border: none;
     border-radius: 0 0.5rem 0.5rem 0;
     cursor: pointer;
@@ -834,7 +838,7 @@ footer {
             font-weight: 600;
             justify-content: center;
             
-            background-color: transparent;
+            background-color: var(--clr-transparent);
             border: none;
             gap: 0.5rem;
 
@@ -1162,7 +1166,7 @@ footer {
             border-radius: 50%;
 
             border: 2px solid var(--clr-primary);
-            background-color: transparent;
+            background-color: var(--clr-transparent);
 
             position:absolute;
             left: 0;

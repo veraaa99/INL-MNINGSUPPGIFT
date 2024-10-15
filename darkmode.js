@@ -1,3 +1,7 @@
+// För att det här scriptet ska fungera så behöver du lägga till en .dark klass i din css där du stylar dina färger
+// du behöver också en checkbox med id="darkmode-switch" i din HTML
+
+
 const darkmodeSwitch = document.querySelector('#darkmode-switch')
 const hasDarkmode = localStorage.getItem('darkmode')
 
