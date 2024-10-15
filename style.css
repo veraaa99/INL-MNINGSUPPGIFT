@@ -9,6 +9,7 @@
     --clr-white: #fff;
     --clr-permanent-white: #fff;
     --clr-transparent: rgba(0, 0, 0, 0);
+    --clr-mobile-background: #0B0F19;
 
     --clr-gray-100: #F3F6FF;
     --clr-gray-200: #EFF2FC;
@@ -365,8 +366,7 @@ main {
 }
 
 .mobile-screen {
-    /* SE ÖVER */
-    background-color: #0B0F19; 
+    background-color: var(--clr-mobile-background); 
     border-radius: 18%;
 }
     
@@ -688,7 +688,6 @@ footer {
         p {
             padding: 0;
             font-size: 1.13rem;
-            /* max-width: 90%; */
             margin-bottom: 0;
             margin-top: 0.7rem;
         }
